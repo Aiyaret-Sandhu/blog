@@ -26,38 +26,38 @@ export default function Nav() {
 
     // All NavList 
     const navList = (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <ul className="mb-4 mt-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal text-xl mt-2"
                 style={{ color: mode === 'dark' ? 'white' : 'white' }}
             >
-                <Link to={'/'} className="flex items-center">
-                    Home
+                <Link to={'/'} className="flex items-center ">
+                      &#127968; Home 
                 </Link>
             </Typography>
             <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal text-xl mt-2 ml-4"
                 style={{ color: mode === 'dark' ? 'white' : 'white' }}
             >
                 <Link to={'/allblogs'} className="flex items-center">
-                    Blogs
+                📝 Blogs
                 </Link>
             </Typography>
             <Typography
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal text-xl ml-2 mt-2"
                 style={{ color: mode === 'dark' ? 'white' : 'white' }}
             >
                 <Link to={'/adminlogin'} className="flex items-center">
-                    Admin Login
+                👨‍💼 Admin_Login
                 </Link>
             </Typography>
         </ul>
@@ -67,8 +67,9 @@ export default function Nav() {
         <>
             {/* Navbar  */}
             <Navbar
-                className="sticky inset-0 z-20 h-max max-w-full border-none rounded-none py-2 px-4 lg:px-8 lg:py-2"
-                style={{ background: mode === 'dark' ? 'rgb(30, 41, 59)' : '#30336b' }}>
+                className="sticky inset-0 z-20 h-16 max-w-full border-none rounded-none py-2 px-4 lg:px-8 lg:py-2"
+                style={{ background: mode === 'dark' ? 'rgb(30, 41, 59)' : 'rgba(0,128,0,0.5)',
+                boxShadow: mode === 'light' ? '1px 50px 50px rgba(0, 128, 0, 0.5)' : 'none' }}>
 
                 {/* Desktop View  */}
                 <div className="flex items-center justify-between text-blue-gray-900">
@@ -77,17 +78,16 @@ export default function Nav() {
                     <Link to={'/'}>
                         <Typography
                             as="a"
-                            className="mr-4 cursor-pointer py-1.5 text-xl font-bold flex gap-2 items-center"
+                            className="mr-4 cursor-pointer py-1.5 text-3xl flex gap-2 items-center"
                             style={{ color: mode === 'dark' ? 'white' : 'white' }}
                         >
                             {/* Logo Image  */}
-                            <img
+                            {/* <img
                                 className=' w-10 h-10 '
                                 src='https://cdn-icons-png.flaticon.com/128/3685/3685253.png'
-                            />
+                            /> */}
                             {/* Logo Text  */}
                             <span>
-                                Devknus
                             </span>
                         </Typography>
                     </Link>
@@ -102,8 +102,8 @@ export default function Nav() {
 
                         {/* Search Icon */}
                         <div>
-                            {/* <AiOutlineSearch size={20} color="white" /> */}
-                            <SearchDialog/>
+                            {/* <AiOutlineSearch size={30} color="white" /> */}
+                            <SearchDialog />
                         </div>
 
                         {/* Share Icon */}

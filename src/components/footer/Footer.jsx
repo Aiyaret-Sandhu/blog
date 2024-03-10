@@ -5,38 +5,38 @@ function Footer() {
     const context = useContext(myContext);
     const { mode } = context;
     return (
-        <footer className="body-font" style={{ background: mode === 'dark' ? 'rgb(30, 41, 59)' : '#30336b' }}>
+        <footer className="body-font" style={{ background: mode === 'dark' ? 'rgb(30, 41, 59)' : 'white' }}>
             {/* Left Content  */}
             <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
                 {/* Blog Logo  */}
-                <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <div className="flex title-font font-medium items-center md:justify-start justify-center text-green-900">
                     {/* logo  */}
-                    <img className='w-10'
+                    {/* <img className='w-10'
                         src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png" alt="logo"
-                    />
+                    /> */}
                     {/* logo text  */}
-                    <span className="ml-3 text-xl text-white">
-                        Devknus
+                    <span className="ml-3 text-xl text-green">
+                        The Groco
                     </span>
                 </div>
 
                 {/* items  */}
-                <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-                    © 2023 Devknus —
+                <p className="text-sm text-green-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-green-200 sm:py-2 sm:mt-0 mt-4">
+                    © 2024 The Groco —
                     <a
                         href="https://twitter.com/knyttneve"
-                        className="text-gray-600 ml-1"
+                        className="text-green-600 ml-1"
                         rel="noopener noreferrer"
                         target="_blank"
                     >
-                        @devknus
+                        @thegroco
                     </a>
                 </p>
                 
                 {/* Right item  */}
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     {/* Icon 1  */}
-                    <a className="text-gray-500">
+                    <a className="text-green-800">
                         <svg
                             fill="currentColor"
                             strokeLinecap="round"
@@ -50,7 +50,7 @@ function Footer() {
                     </a>
 
                     {/* Icon 2  */}
-                    <a className="ml-3 text-gray-500">
+                    <a className="ml-3 text-green-800">
                         <svg
                             fill="currentColor"
                             strokeLinecap="round"
@@ -64,7 +64,7 @@ function Footer() {
                     </a>
 
                     {/* Icon 3  */}
-                    <a className="ml-3 text-gray-500">
+                    <a className="ml-3 text-green-800">
                         <svg
                             fill="none"
                             stroke="currentColor"
@@ -80,7 +80,7 @@ function Footer() {
                     </a>
 
                     {/* Icon 4  */}
-                    <a className="ml-3 text-gray-500">
+                    <a className="ml-3 text-green-800">
                         <svg
                             fill="currentColor"
                             stroke="currentColor"

@@ -88,7 +88,7 @@ export default function AdminLogin() {
 
                 {/* CardBody */}
                 <CardBody>
-                    <form className=" flex flex-col gap-4">
+                    <form className=" flex flex-col gap-6 mt-6">
                         {/* First Input  */}
                         <div>
                             <Input

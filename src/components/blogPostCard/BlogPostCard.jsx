@@ -33,7 +33,7 @@ function BlogPostCard() {
                         borderBottom: mode === 'dark'
                           ?
                           ' 4px solid rgb(226, 232, 240)'
-                          : ' 4px solid rgb(30, 41, 59)'
+                          : ' 4px solid green'
                       }}
                       className={`h-full shadow-lg  hover:-translate-y-1 cursor-pointer hover:shadow-gray-400
                ${mode === 'dark'
@@ -73,7 +73,8 @@ function BlogPostCard() {
                             ? 'rgb(226, 232, 240)'
                             : ' rgb(30, 41, 59)'
                         }}>
-                          Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                          
+                          
                         </p>
                       </div>
                     </div>
@@ -90,7 +91,7 @@ function BlogPostCard() {
               style={{
                 background: mode === 'dark'
                   ? 'rgb(226, 232, 240)'
-                  : 'rgb(30, 41, 59)',
+                  : 'green',
                 color: mode === 'dark'
                   ?
                   'rgb(30, 41, 59)'
